@@ -116,11 +116,18 @@
   let deleteHandler = (e) => { //add delete-line
     if(e.target.className === 'toggle-all'){
       const check = Array.from(document.querySelectorAll('.toggle'))
-      for(let i = 0 ;i < check.length ; i++){
-        const index = check[i].dataset.index
-        items[index].done = !items[index].done
-        
+      if(toggleAll.checked === true){
+        for(let i = 0;i < items.length;i++){
+          console.log(items[i])
+          items[i].done = true
+        }
+      }else{
+        for(let i = 0;i < items.length;i++){
+          console.log(items[i])
+          items[i].done = false
+        }
       }
+     
     }
     storeData(items)
   }
