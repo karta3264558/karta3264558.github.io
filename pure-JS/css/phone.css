@@ -1,0 +1,140 @@
+@media (min-width:576px) {
+  .fixed-width {
+    max-width: 540px;
+    margin: auto;
+  }
+
+  .col-sm-1 {
+    flex: 0 1 calc(100% / 12 * 1);
+  }
+
+  .col-sm-2 {
+    flex: 0 1 calc(100% / 12 * 2);
+  }
+
+  .col-sm-3 {
+    flex: 0 1 calc(100% / 12 * 3);
+  }
+
+  .col-sm-4 {
+    flex: 0 1 calc(100% / 12 * 4);
+  }
+
+  .col-sm-5 {
+    flex: 0 1 calc(100% / 12 * 5);
+  }
+
+  .col-sm-6 {
+    flex: 0 1 calc(100% / 12 * 6);
+  }
+
+  .col-sm-7 {
+    flex: 0 1 calc(100% / 12 * 7);
+  }
+
+  .col-sm-8 {
+    flex: 0 1 calc(100% / 12 * 8);
+  }
+
+  .col-sm-9 {
+    flex: 0 1 calc(100% / 12 * 9);
+  }
+
+  .col-sm-10 {
+    flex: 0 1 calc(100% / 12 * 10);
+  }
+
+  .col-sm-11 {
+    flex: 0 1 calc(100% / 12 * 11);
+  }
+
+  .col-sm-12 {
+    flex: 0 1 calc(100% / 12 * 12);
+  }
+
+  /* carrd-img */
+  .col-md-7 img {
+    position: absolute;
+    height: 35rem;
+    margin-top: -3.4rem;
+  }
+ 
+}
+@media(max-width:575.8px) {
+  .square-intro div{
+    border-radius: 10%!important;
+    -webkit-border-radius: 10%!important;
+    -moz-border-radius: 10%!important;
+    -ms-border-radius: 10%!important;
+    -o-border-radius: 10%!important;
+}
+  .mr-t-4{
+    margin-top: 0.5rem!important;
+  }
+  .wrap-container{
+    background: transparent!important;
+    color: #000!important;
+    text-shadow:0 0 1px #000!important;
+  }
+  .row .col-md-5{
+    height: 20rem;
+  }
+  .full-width.animation-phone {
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #fff;
+    position: relative;
+    z-index: 8;
+  }
+
+  .center-center {
+    height: 12rem;
+  }
+
+  .section-component {
+    margin-top: 1rem;
+    position: relative;
+    height: 50rem;
+  }
+
+  .full-width.mr-t-4{
+    height: 60rem!important;
+  }
+  .section-component .col-md-3:nth-of-type(2){
+    bottom: 0%!important;
+  }
+  .section-component .col-md-3:nth-of-type(3){
+    bottom:-46%!important;
+    
+  }
+  .section-component .col-md-3:nth-of-type(4){
+    bottom: -92%!important;
+  } 
+  .phone-container{
+    height: 35rem;
+  }
+  .phone-container img{
+    height: 40rem;
+  }
+  .full-width.animation-phone{
+    margin-bottom: 3rem;
+  }
+  footer{
+    height: 7rem;
+  }
+}
+
+@media(max-width:516.5px){
+  .full-width.pushed.mr-t-4{
+    height:110rem;
+  }
+  .section-component .col-md-3{
+    left: 50%;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+}
+
+}
