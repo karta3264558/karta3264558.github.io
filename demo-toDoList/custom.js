@@ -69,7 +69,11 @@
       text,
       done: false
     }
-    if (text === '') return
+    if (text === null || text.indexOf(' ')>= 0) {
+      alert('請勿輸入空格')
+      this.reset()
+      return 
+    }
     items.push(item)
     storeData(items)
 
@@ -88,24 +92,18 @@
       items.splice(index, 1)
      
     }
-    let arr = []
     if (e.target.className === 'clear-all') {
-      for(let i of items){
-        if(i.done === true){
-          arr.push(i)
+      let arr = []
+      for(let i = 0;i<items.length;i++){
+        if(items[i].done === false){
+          arr.push(items[i])
         }
       }
-      console.log(arr)
-      for(let j = 0;j<arr.length;j++){
-        items.splice(arr[j],1)
-      }
-     
-     
+      items = arr
     }
     if (e.target.className === 'toggle') {
       const index = e.target.dataset.index 
       items[index].done = !items[index].done
-      // console.log(items[index].done)
     }
     
     storeData(items)
