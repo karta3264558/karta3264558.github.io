@@ -1,0 +1,57 @@
+20191003-飽嗝Burger
+
+網頁檔名：index.html
+網頁標題：飽嗝Burger
+網頁描述：可以放置的字數(半形150字元)，(全形75字元)，裡面可以適當的加入關鍵字。
+
+
+News
+
+網頁檔名：news.html
+網頁標題：News | 飽嗝Burger
+網頁描述：可以放置的字數(半形150字元)，(全形75字元)，裡面可以適當的加入關鍵字。
+
+
+About us
+
+網頁檔名：about.html
+網頁標題：About us | 飽嗝Burger
+網頁描述：可以放置的字數(半形150字元)，(全形75字元)，裡面可以適當的加入關鍵字。
+
+
+Food&Drink
+
+burger
+
+網頁檔名：burger.html
+網頁標題：burger  | 飽嗝Burger
+網頁描述：可以放置的字數(半形150字元)，(全形75字元)，裡面可以適當的加入關鍵字。
+
+
+Fries
+
+網頁檔名：fries.html
+網頁標題：Burger Fries | 飽嗝Burger
+網頁描述：可以放置的字數(半形150字元)，(全形75字元)，裡面可以適當的加入關鍵字。
+
+
+beverage
+
+網頁檔名：beverage.html
+網頁標題：Burger Beverage | 飽嗝Burger
+網頁描述：可以放置的字數(半形150字元)，(全形75字元)，裡面可以適當的加入關鍵字。
+
+
+Location
+
+網頁檔名：store-location.html
+網頁標題：Location | 飽嗝Burger
+網頁描述：可以放置的字數(半形150字元)，(全形75字元)，裡面可以適當的加入關鍵字。
+
+
+Contact us
+
+網頁檔名：contact.html
+網頁標題：Contact us | 飽嗝Burger
+網頁描述：可以放置的字數(半形150字元)，(全形75字元)，裡面可以適當的加入關鍵字。
+
