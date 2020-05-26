@@ -16,7 +16,7 @@
     let sideNav = document.querySelector('#side-nav')
         // console.log(pushed)
     function openHandler(e) {
-        
+        console.log(e.target.className)
         if(e.target.className == 'nav-collapse font-color'){
             sideNav.classList.toggle('side-menu');
             overlay.classList.toggle('overlay-block');
@@ -157,10 +157,7 @@
             imgs[1].style.transform = `translate3d(0,-${offset * 0.25}px,0)`
         }else if(yOff > start_static){
             parallaxPage.classList.add('dp-none')
-            console.log(111)
-        }else if(yOff < 10){
-            parallaxPage.classList.remove('dp-none')
-            console.log('Its work')
+            
         }
         
         
