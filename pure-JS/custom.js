@@ -113,7 +113,6 @@
         const word_splite = 2300
         const end_parallax = 3450
         const start_static = 3335
-        console.log(yOff)
 
         if(yOff < Mount_scroll){
             const perc = yOff / Mount_scroll
@@ -157,7 +156,6 @@
             imgs[1].style.transform = `translate3d(0,-${offset * 0.25}px,0)`
         }else if(yOff > start_static){
             parallaxPage.classList.add('dp-none')
-            
         }
         
         
