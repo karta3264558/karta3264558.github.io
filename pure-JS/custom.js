@@ -17,7 +17,7 @@
         // console.log(pushed)
     function openHandler(e) {
         
-        if(e.target.className == 'nav-collapse'){
+        if(e.target.className == 'nav-collapse font-color'){
             sideNav.classList.toggle('side-menu');
             overlay.classList.toggle('overlay-block');
         }
