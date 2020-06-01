@@ -562,4 +562,9 @@ footer .col-md-12.d-flex{
     padding-left: 6rem;
   }
 }
-
+@media(max-width:1200px){
+  .carousel{
+    height: 70vh;
+    
+  }
+}
