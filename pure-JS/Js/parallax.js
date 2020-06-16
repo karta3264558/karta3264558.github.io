@@ -94,7 +94,7 @@
             displayPage(perc)
             console.log(13213)
           }else if(wWidth <= 1500){
-            let  perc = (yOff - end_parallax)*1.44
+            let  perc = (yOff - end_parallax)*1.35
             displayPage(perc)
           }else if(wWidth <= 2560){
             let  perc = (yOff - end_parallax)*1.5
