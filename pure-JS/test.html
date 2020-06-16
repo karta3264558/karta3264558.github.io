@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container{
+      display: flex;
+      flex-flow: nowrap row;
+      height: 200vh;
+      width: 6000px;
+      position: fixed;
+    }
+    .road{
+      height: 200vh;
+      width: 1500px;
+    }
+    /* @media(min-width:1440px){
+      .container{
+        width: 8000px;
+      }
+      .road{
+        width: 100%;
+      }
+    } */
+    .road1{
+      background-color: rgb(187, 255, 0);
+    }
+    .road2{
+      background-color: rgb(0, 38, 255);
+    }
+    .road3{
+      background-color: rgb(0, 255, 213);
+    }
+    .road4{
+      background-color: rgb(255, 0, 221);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="road1 road"></div>
+    <div class="road2 road"></div>
+    <div class="road3 road"></div>
+    <div class="road4 road"></div>
+  </div>
+<script>
+  ;(function(){
+    const container = document.querySelector('.container')
+    const roadLength = container.offsetWidth
+    const body = document.querySelector('body')
+    const road = document.querySelectorAll('.road')
+    
+    body.style.height = `${roadLength}px`
+    function scrollHandler(){
+      const wWidth = window.innerWidth
+      console.log(`body:${body.offsetHeight}`,`now_PageY:${window.pageYOffset}`,`windowinnerHeight:${window.innerHeight}`)
+      const wHeight = window.innerHeight
+      let scrollTop = window.pageYOffset
+      let dHeight = body.offsetHeight - wHeight
+      let wRoad = roadLength - wWidth
+      let step = wRoad / dHeight
+      let goLeft = scrollTop * step
+      // if(wWidth >= 2400){
+      //   container.style.width = `8000px`
+      //   body.style.height = `8000px`
+
+      //   road.forEach((i)=>{
+      //     i.style.width = '100%'
+      //   })
+      // }
+      container.style.transform = `translate3d(-${goLeft}px,0,0)`
+    }
+
+
+    window.addEventListener('scroll',scrollHandler)
+  })()
+
+</script>
+</body>
+</html>

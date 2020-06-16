@@ -127,6 +127,18 @@
   footer{
     height: 7rem;
   }
+  .road6 h2{
+    text-align: center;
+    font-size: 2rem;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+}
 }
 
 @media(max-width:516.5px){
