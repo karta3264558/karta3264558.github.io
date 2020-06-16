@@ -1,6 +1,6 @@
 # karta3264558.github.io
 API嘗試
-https://karta3264558.github.io/pure-JS/
+https://karta3264558.github.io/pure-JS/parallax
 
 ToDoList嘗試
 https://karta3264558.github.io/demo-toDoList/
