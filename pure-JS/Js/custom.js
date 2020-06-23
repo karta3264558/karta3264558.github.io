@@ -1,6 +1,7 @@
 (function() {
     let nav = document.querySelector('nav')
-
+    let overlay =  document.querySelector('.overlay')
+    let sideNav = document.querySelector('#side-nav')
     function scrollHandler() {
         let st = window.scrollY
             // console.log(st)
@@ -12,8 +13,7 @@
         }
     }
     document.addEventListener('scroll', scrollHandler)
-    let overlay =  document.querySelector('.overlay')
-    let sideNav = document.querySelector('#side-nav')
+  
         // console.log(pushed)
     function openHandler(e) {
         if(e.target.className == 'nav-collapse font-color'){
@@ -29,9 +29,17 @@
         }
     }
 
+    function checkWidth(){
+        const wWidth = window.innerWidth
+        console.log(111,wWidth)
+        if(wWidth>767){
+            overlay.classList.remove('overlay-block');
+            sideNav.classList.remove('side-menu');
 
+        }
+    }
     document.addEventListener('click', openHandler);
-
+    window.addEventListener('resize',checkWidth)
 })();
 ;(function(){
     const slides = document.querySelectorAll('.carousel-img')
@@ -149,4 +157,3 @@
 
     document.querySelector('#city').addEventListener('change', changeHndler);
 })();
-

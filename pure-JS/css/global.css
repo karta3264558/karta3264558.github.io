@@ -174,7 +174,7 @@ li {
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 11;
+        z-index: 10;
         background-color: rgb(230, 66, 66);
         top:2.23rem;
         left: 0;
@@ -211,23 +211,29 @@ li {
 }
 
 .shrink {
-    background: rgba(29, 28, 28, 0.5)!important;
-    transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image:linear-gradient(transparent,rgba(241, 241, 241, 0));
+
 }
 
 
 nav{
     z-index: 11;
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    position: sticky;
+    background-color: rgb(243, 100, 100);
+    background-image: linear-gradient(transparent,rgba(230, 58, 152, 0.5));
+    /* background-color: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+    position: fixed;
     top: 0;
     
 }
 
+nav,.shrink{
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
 .nav-brand img{
     width: 9vw;
     height: 7vh;
@@ -299,6 +305,7 @@ ul.menu-group li a:hover{
    background-color: rgb(80,206,238);
 }
 .header-search input{
+    padding-left: .5rem;
     -webkit-border-radius: 150px 0 0 150px;
     -moz-border-radius: 150px 0 0 150px;
     -ms-border-radius: 150px 0 0 150px;
@@ -328,7 +335,7 @@ ul.menu-group li a:hover{
 /* Carousel */
 .carousel-container{
     position: relative;
-    height: 80vh;
+    height: 100vh;
 }
 .slides{
     position: relative;
@@ -337,7 +344,7 @@ ul.menu-group li a:hover{
 }
 .carousel-img{
     width: 100%;
-    height: 80vh;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -478,7 +485,9 @@ ul.menu-group li a:hover{
 .thirdPage .third_road{
     
     height: 100%;
-    width:1500px;
+    
+    position: relative;
+    flex-grow: 1;
 }
 .road1{
     background-color: rgb(63, 240, 240);
@@ -566,6 +575,32 @@ ul.menu-group li a:hover{
     left: 10%;
     z-index: 15;
 }
+svg.pathSvg{
+    width: 300px;
+    height:100%;
+    position: absolute;
+}
+svg.pathSvg:nth-child(1){
+    top: 5%;
+    left: 10%;
+}
+svg.pathSvg:nth-child(2){
+    top: 22%;
+    left: 30%;
+}
+svg.pathSvg:nth-child(3){
+    top: 10%;
+    left: 50%;
+}
+svg.pathSvg:nth-child(4){
+    top: 29%;
+    left: 68%;
+}
+svg.pathSvg:nth-child(5){
+    top: 18%;
+    left: 90%;
+}
+
 /* .thirdPage{
     background-color: rgb(86, 82, 82);
     transform: translate3d(0,100vh,0);
@@ -767,9 +802,13 @@ ul.menu-group li a:hover{
 }
 /* middle-background */
 .middle-background{
-    background: url('http://picsum.photos/id/550/1600/800') center center no-repeat fixed;
+    background: url('http://picsum.photos/id/550/1600/800') ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover ;
-    height:50vh;
+    width: 100%;
+    height:70vh;
     position: relative;
     z-index:5;
     color: #fff;
@@ -924,4 +963,10 @@ ul.menu-group li a:hover{
 }
 #city{
    width: 5rem;
+}
+.weathercontainer{
+    margin: auto;
+}
+.weathercontainer td{
+    padding: 0 1rem;
 }
