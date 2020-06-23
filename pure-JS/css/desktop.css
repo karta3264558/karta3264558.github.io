@@ -73,3 +73,9 @@
     margin-top: -13rem;
   }
 }
+@media(max-width:1024px){
+  .middle-background{
+    background-attachment: fixed;
+  
+  }
+}
